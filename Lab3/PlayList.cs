@@ -13,7 +13,7 @@ public class PlayList
     //public int NumberOfSongs { get; set; }
     public PlayList()
     {
-        playlist = new List<Song>();
+        playlist = new List<Song>(); //uhervuoqre
     }
     public bool AddSong(Song songToAdd)
     {
