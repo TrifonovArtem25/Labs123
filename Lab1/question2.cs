@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1._1
 {
-    class question2
+    public class question2
     {
         private int[,] matrix;
 
@@ -24,6 +24,14 @@ namespace Lab1._1
                     matrix[i, j] = r.Next() % 31 - 15;
                 }
             }
+        }
+        public question2(int[,] m)
+        {
+            matrix = m;
+        }
+        public void setMatrix(int[,] m)
+        {
+            this.matrix = m;
         }
         public int FirstZeroColumn()
         {
@@ -50,7 +58,7 @@ namespace Lab1._1
                 {
                     Console.Write("{0,5}", matrix[i, j]);
                 }
-                Console.Write("{0,10}", clist[i]);
+                Console.Write("{0,40}", "Line characteristic: "+clist[i]);
                 Console.WriteLine();
             }
         }
@@ -81,11 +89,11 @@ namespace Lab1._1
                 matrix[i - 1, j] = copy;
             }
         }
-        public void sort()
+        public int[,] sort()
         {
             if (matrix.GetLength(0) == 1)
             {
-                return;
+                return matrix;
             }
             bool finish = false;
             int[] clist = characteristic();
@@ -105,6 +113,7 @@ namespace Lab1._1
                     }
                 }
             }
+            return matrix;
 
         }
     }

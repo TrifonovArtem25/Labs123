@@ -23,6 +23,11 @@ namespace Lab1._1
             }
 
         }
+        public question1(float[] a, float x)
+        {
+            massiv = a;
+            X = x;
+        }
         public float GetX()
         {
             return X;
