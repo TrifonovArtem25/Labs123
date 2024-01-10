@@ -5,7 +5,6 @@ namespace Lab3;
 
 public class BloggingContext : DbContext
 {
-    //public DbSet<PlayList> PlayList { get; set; }
     public DbSet<Song> Song { get; set; }
 
     public string DbPath { get; }

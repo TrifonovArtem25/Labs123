@@ -7,9 +7,6 @@ public class Program
 {
     static void Main(string[] args)
     {
-        //float[] toTest = { 1, -2, 6, 0, -8, 3, 5, -1 };
-        //float X = 2;
-        //question1 q1 = new question1(toTest, X);
         question1 q1 = new question1();
         Console.WriteLine("X: " + q1.GetX());
         Console.WriteLine();

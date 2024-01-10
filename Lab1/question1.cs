@@ -54,10 +54,10 @@ namespace Lab1._1
             for (int i = 0; i < massiv.Length; i++)
             {
                 result *= massiv[i];
-                if (Math.Abs(massiv[i]) > max) // если новое значение больше текущего максимального
+                if (Math.Abs(massiv[i]) > max)
                 {
-                    result = 1; // сбрасываем результат произведения
-                    max = Math.Abs(massiv[i]); // устанавливаем новое текущее максимальное значение
+                    result = 1;
+                    max = Math.Abs(massiv[i]);
                 }
             }
             return result;

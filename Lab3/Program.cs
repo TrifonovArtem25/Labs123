@@ -63,49 +63,13 @@ class Program
 
                 case "9":
                     String CreatePLinDBQuery = CreatePlayListName();
-
                     Console.WriteLine(playlist.ToSQL(CreatePLinDBQuery));
-
-                    //using (var db = new BloggingContext())
-                    //{
-                    //    if (db.Song.Where(b => b.PlayListName == CreatePLinDBQuery).Count() != 0)
-                    //    {
-                    //        Console.WriteLine("PlayList already exists");
-                    //        Console.Write("Command:  ");
-                    //        break;
-                    //    }
-                    //    db.AddRange(playlist.playlist.Select(c => new Song()
-                    //    {
-                    //        Author = c.Author,
-                    //        Title = c.Title,
-                    //        PlayListName = CreatePLinDBQuery
-                    //    }));
-                    //    db.SaveChanges();
-                    //    Console.WriteLine("Playlist has been saved to SQL-DataBase");
-                    //    Console.Write("Command:  ");
-                    //    break;
-                    //}
                     Console.Write("Command:  ");
                     break;
 
                 case "10":
                     string GetPLfromDBQuery = ReadPlayListName();
-
                     Console.WriteLine(playlist.FromSQL(GetPLfromDBQuery));
-
-                    //using (var db = new BloggingContext())
-                    //{
-                    //    IQueryable<Song> query = (db.Song.Where(b => b.PlayListName == GetPLfromDBQuery));
-                    //    if (query.Count() == 0)
-                    //    {
-                    //        Console.WriteLine("No playlist found");
-                    //        Console.Write("Command:  ");
-                    //        break;
-                    //    }
-                    //    playlist.playlist=query.ToList();
-
-                    //    Console.WriteLine("Playlist has been loaded from SQL-DataBase");
-                    //}
                     Console.Write("Command:  ");
                     break;
                 case "11":
