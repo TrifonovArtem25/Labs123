@@ -1,4 +1,5 @@
-﻿public class Song
+﻿namespace Lab2;
+public class Song
 {
     public Song(string author, string title)
     {

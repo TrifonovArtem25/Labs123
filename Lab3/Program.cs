@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 using System.Linq;
 using System.ComponentModel;
 using System.Security.Cryptography.X509Certificates;
-
+using Lab3;
 
 class Program
 {

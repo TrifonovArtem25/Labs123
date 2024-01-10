@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+namespace Lab3;
 
 public class BloggingContext : DbContext
 {

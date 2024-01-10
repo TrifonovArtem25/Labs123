@@ -1,19 +1,21 @@
 ﻿using System.Diagnostics;
+using Lab2;
 class Program
 {
     static void Main(string[] args)
     {
         PlayList playlist = new PlayList();
         Song snow = new Song("Red Hot Chili Peppers", "Snow");
-        // if ("abcdef".Contains("Cde", StringComparison.InvariantCultureIgnoreCase))
-        // {
-        //     Console.WriteLine("hh");
-        // }
-        playlist.AddSong(new Song("Red Hot Chili Peppers", "Snow"));
+        Song wonderwall = new Song("Oasis", "Wonderwall");
+        Song kids = new Song("MGMT", "Kigs");
+        Song extremeWays = new Song("Moby", "Extreme Ways");
 
-        playlist.AddSong(new Song("Green Day", "American Idiot"));
-        playlist.AddSong(new Song("Oasis", "WonderWall"));
-        playlist.AddSong(new Song("Linkin Park", "Somewhere I Belong"));
+        playlist.AddSong(snow);
+        playlist.AddSong(wonderwall);
+        playlist.AddSong(kids);
+        playlist.AddSong(extremeWays);
+
+
         bool active = true;
         Console.WriteLine("Usage:");
         Console.WriteLine("'search' to find a song");

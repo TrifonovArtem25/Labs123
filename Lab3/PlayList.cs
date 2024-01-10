@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 using System.Xml.Serialization;
-
+namespace Lab3;
 public class PlayList
 {
     public List<Song> playlist;
